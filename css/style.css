@@ -21,7 +21,7 @@ body {
   color: #FFFFFF;
 }
 
-#content  {
+#content {
   margin: auto;
   width: 38rem;
   height: 27.6rem;
@@ -44,7 +44,7 @@ body {
   border-radius: 3rem;
   background: #151557;
   font-size: 2rem;
-  padding:  1.2rem 2.4rem;
+  padding: 1.2rem 2.4rem;
   margin-right: 1.6rem;
 }
 
@@ -55,27 +55,57 @@ body {
 }
 
 .for {
+  filter: drop-shadow(0.5rem 0.5rem 6rem rgb(112, 0, 255, 0.8));
   margin: 6.2rem 0 6.2rem 0;
 }
 
-@media (max-width: 37.5rem){
+#gif {
+  filter: drop-shadow(0.5rem 0.5rem 6rem rgb(112, 0, 255, 0.8));
+
+}
+
+@media (max-width: 68rem) {
+  body {
+    height: 118rem;
+  }
+
+  #content {
+    margin: auto 1rem;
+
+  }
+
+  .container,
+  #error {
+    width: 30rem;
+  }
+
+  #error .for {
+    width: 20%;
+  }
+
+  #gif {
+    width: 40%;
+  }
+
+}
+
+@media (max-width: 37.5rem) {
   body {
     display: flex;
     flex-direction: column;
-    /* height: 70rem; */
+    height: 80rem;
   }
 
-  #content  {
-    /* margin: auto; */
+  #content {
+    margin: auto;
     width: 20rem;
-    /* height: 27.6rem; */
   }
 
   #content h1 {
     font-size: 2rem;
     padding-bottom: 2.4rem;
   }
-  
+
   #content p {
     font-size: 1rem;
     padding-bottom: 5.6rem;
@@ -88,22 +118,23 @@ body {
     border-radius: 3rem;
     background: #151557;
     font-size: 1rem;
-    padding:  0.6rem 1rem;
+    padding: 0.6rem 1rem;
     margin-right: 1.6rem;
-  }  
+  }
 
-  .container, #error  {
-    /* margin: auto; */
-    /* width: 20rem; */
-    /* height: 10rem; */
+  .container,
+  #error {
+    width: 20rem;
+    padding-bottom: 20rem;
+    /* box-shadow: 10px 5px 5px #7000FF; */
   }
 
   #error .for {
-    width: 10%;
+    width: 20%;
   }
 
   #gif {
-    width: 30%;
+    width: 50%;
   }
 
 }
